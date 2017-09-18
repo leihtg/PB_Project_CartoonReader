@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loading" >
+
+    <TextView
+        android:text="@string/info"
+        android:layout_marginBottom="30dp"
+        style="@style/loading"/>
+
+    <TextView
+        android:text="@string/copyright" 
+        android:layout_marginBottom="15dp"
+        style="@style/loading"/>
+
+</RelativeLayout>

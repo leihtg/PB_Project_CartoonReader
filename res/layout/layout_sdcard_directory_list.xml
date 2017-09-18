@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/filesList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff999999" >
+
+        <Button
+            android:id="@+id/sdcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/sdcard_name" 
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/fileParent"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sdcard_goback_fatherDir"
+            android:layout_toRightOf="@id/sdcard"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/browse"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sdcard_browse"
+            android:layout_toRightOf="@id/fileParent" 
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

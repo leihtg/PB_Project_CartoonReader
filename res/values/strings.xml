@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LoadingActivity!</string>
+    <string name="app_name">动漫阅读器</string>
+    <string name="info">本版权归hwb所有</string>
+    <string name="copyright">copyright@2012-2015 hwb All Rights Reader</string>
+    <string name="init_tips">请选择要阅读的漫画</string>
+    <string name="fileOpen">打开文件</string>
+    <string name="recordHistory">历史记录</string>
+    <string name="sdcard_name">SDcard</string>
+    <string name="sdcard_goback_fatherDir">返回上级目录</string>
+    <string name="sdcard_browse">浏览</string>
+    <string name="layout_title">提示</string>
+    <string name="layout_body">确定要退出动漫阅读器吗</string>
+    <string name="submit">确定</string>
+    <string name="cancle">取消</string>
+    <string name="bookmarkTitle">请输入书签名称:</string>
+    <string name="firstPage">第一页</string>
+    <string name="beforePage">上一页</string>
+    <string name="nextPage">下一页</string>
+    <string name="lastPage">最后一页</string>
+    <string name="pageTitle">跳转到</string>
+    <string name="sdcard_rootError">获取SDcard根目录错误</string>
+    <string name="sdcard_nosdcard">SDcard不存在或写保护</string>
+    <string name="sdcard_is_root">根目录</string>
+    <string name="noPic">没有漫画</string>
+    <string name="nopath">所看漫画路径不存在</string>
+    <string name="pageFirst">当前已经到第一张</string>
+    <string name="pageLast">当前已经到最后一张</string>
+    <string name="orderTimeBrowse">定时浏览漫画</string>
+    <string name="bookmarketBrowse">浏览书签</string>
+    <string name="pictureRotate">漫画旋转</string>
+    <string name="manu_more">More</string>
+    <string name="leftRotate">左转45度</string>
+    <string name="leftRotate_tip">向左旋转45度</string>
+    <string name="rightRotate">右转45度</string>
+    <string name="rightRotate_tip">向右旋转45度</string>
+    <string name="picRotate">自定义旋转</string>
+    <string name="bookmarkSave">书签保存成功</string>
+    <string name="bookmarkTitleTip">请输入书签名称</string>
+    <string name="nobookmark">没有找到书签</string>
+     <string name="bookmark_bookName">书签名称</string>
+    <string name="bookmark_readTime">阅读时间</string>
+    <string name="bookmark_lasttimeRead">阅读的位置</string>
+     <string name="bookmarkstage">第</string>
+    <string name="nobookmarkpage">页</string>
+    <string name="check">查看</string>
+    <string name="delete">删除当前标签</string>
+    <string name="deleteAll">删除所有标签</string>
+    <string name="fixedtimetobrowse">定时预览</string>
+    <string name="bookmarkDelete">是否删除</string>
+    <string name="bookmarkSubmit">确认删除</string>
+    <string name="bookmarkCancel">取消</string>
+    <string name="bookmarkDeleteAll">是否删除所有标签</string>
+    <string name="bookmarkSetUp">书签设置</string>
+    <string name="second3">3秒钟</string>
+    <string name="second5">5秒钟</string>
+    <string name="handcontrol">手动</string>
+    
+    
+    
+</resources>

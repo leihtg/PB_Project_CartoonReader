@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    >
+    
+    <!-- 书签缩略图 -->
+    <ImageView 
+        android:id="@+id/thumbnail"
+        android:layout_width="65dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        />
+    <RelativeLayout 
+        android:id="@+id/layout_markInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:layout_toRightOf="@id/thumbnail"
+        android:gravity="center_vertical">
+        <!-- 书名 -->
+        <TextView
+            android:id="@+id/bookMark"
+            android:text="@string/bookmark_bookName"
+            style="@style/bookmark"/>
+        <TextView
+            android:id="@+id/bookMarkName"
+            android:layout_toRightOf="@id/bookMark"
+            style="@style/bookmark"/>
+        <!-- 上次阅读 -->
+        <TextView
+            android:text="@string/bookmark_readTime"
+            android:id="@+id/lastTimeReaded"
+            android:layout_below="@id/bookMark"
+            style="@style/bookmark"/>
+         <!-- 保存时间 -->
+          <TextView
+            android:id="@+id/saveTime"
+            style="@style/bookmark"
+            android:layout_below="@id/bookMark"
+            android:layout_toRightOf="@id/lastTimeReaded"/>
+          <!-- 阅读位置提示 -->
+          <TextView
+              android:text="@string/bookmark_lasttimeRead"
+              android:id="@+id/readpositon"
+              android:layout_below="@id/lastTimeReaded"
+              android:layout_toRightOf="@+id/imagePath"
+              style="@style/bookmark"/>
+          <!-- 阅读位置 -->
+          <TextView
+              style="@style/bookmark"
+              android:layout_below="@id/lastTimeReaded"
+              android:id="@+id/positon"
+              android:layout_toRightOf="@id/readpositon"/>"
+</RelativeLayout>
+</RelativeLayout>

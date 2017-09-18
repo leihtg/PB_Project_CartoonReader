@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 中间图片显示的部分 -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical" 
+            android:gravity="center_vertical|center_horizontal"
+            >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                 android:scrollbars="horizontal"
+                android:layout_gravity="center_vertical|center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/layoutImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </ScrollView>
+        </ScrollView>
+  
+    <!-- 顶部导航条 -->
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menu_bar" 
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/openSDcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/menu_open" />
+        <!-- 图片名称 -->
+
+        <TextView
+            android:id="@+id/imageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/openSDcard"
+            android:textSize="14sp" 
+             />
+            
+        <!-- 当前位置 -->
+
+        <TextView
+            android:id="@+id/pagePosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/imageName"
+            android:textSize="12sp" />
+        <!-- 更多设置 -->
+
+        <ImageButton
+            android:id="@+id/setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/menu_more" />
+    </RelativeLayout>
+    <!-- 中间导航条，上一页，下一页 -->
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/lastPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/page_left" />
+
+        <ImageButton
+            android:id="@+id/nextPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/page_right" />
+    </RelativeLayout>
+
+    <!-- 底部导航条 -->
+
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_bar" 
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/page"
+            style="@style/bottomButton"
+            android:background="@drawable/menu_directions" />
+
+        <ImageButton
+            android:id="@+id/zoomSmall"
+            style="@style/bottomButton"
+            android:layout_toRightOf="@id/page"
+            android:background="@drawable/menu_zoom_small" />
+
+        <ImageButton
+            android:id="@+id/zoomBig"
+            style="@style/bottomButton"
+            android:layout_toRightOf="@id/zoomSmall"
+            android:background="@drawable/menu_zoom_big" />
+
+        <ImageButton
+            android:id="@+id/bookmark"
+            style="@style/bottomButton"
+            android:layout_toRightOf="@id/zoomBig"
+            android:background="@drawable/menu_bookmark" />
+
+        <ImageButton
+            android:id="@+id/logout"
+            style="@style/bottomButton"
+            android:layout_toRightOf="@id/bookmark"
+            android:background="@drawable/menu_close" />
+    </RelativeLayout>
+
+</RelativeLayout>
